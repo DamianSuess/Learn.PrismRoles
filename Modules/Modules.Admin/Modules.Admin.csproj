@@ -95,6 +95,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PrismRoles.Core\PrismRoles.Core.csproj">
+      <Project>{683f9255-3747-4be7-8972-9207bf2ce0be}</Project>
+      <Name>PrismRoles.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(TargetDir)Modules.Admin.dll" "$(SolutionDir)PrismRoles\bin\$(ConfigurationName)\" /Y</PostBuildEvent>

@@ -1,9 +1,11 @@
 ﻿using Prism.Modularity;
 using Prism.Regions;
 using Modules.Admin.Views;
+using PrismRoles.Core;
 
 namespace Modules.Admin
 {
+    [Roles("Admin")]
     public class AdminModule : IModule
     {
         IRegionManager _regionManager;
